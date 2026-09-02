@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Uc_10_Ryan_Relacionamentos_Codigo_00003.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<Uc_10_Ryan_Relacionamentos_Codigo_00003Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Uc_10_Ryan_Relacionamentos_Codigo_00003Context") ?? throw new InvalidOperationException("Connection string 'Uc_10_Ryan_Relacionamentos_Codigo_00003Context' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

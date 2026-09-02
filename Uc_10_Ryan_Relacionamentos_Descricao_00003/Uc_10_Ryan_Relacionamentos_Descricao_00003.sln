@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36908.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uc_10_Ryan_Relacionamentos_Descricao_00003", "Uc_10_Ryan_Relacionamentos_Descricao_00003\Uc_10_Ryan_Relacionamentos_Descricao_00003.csproj", "{AF633958-345D-4088-BD36-7A7AAD61EFF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF633958-345D-4088-BD36-7A7AAD61EFF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF633958-345D-4088-BD36-7A7AAD61EFF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF633958-345D-4088-BD36-7A7AAD61EFF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF633958-345D-4088-BD36-7A7AAD61EFF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69D13862-AA3C-40A3-9061-7BDF2A56169E}
+	EndGlobalSection
+EndGlobal

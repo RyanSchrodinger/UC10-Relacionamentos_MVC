@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Uc_10_Ryan_Relacionamentos_Descricao_00003.Models;
 
-public class EspecialidadesController : Controller
+public class EspecialidadeController : Controller
 {
     private readonly Uc_10_Ryan_Relacionamentos_Descricao_00003Context _context;
 
-    public EspecialidadesController(Uc_10_Ryan_Relacionamentos_Descricao_00003Context context)
+    public EspecialidadeController(Uc_10_Ryan_Relacionamentos_Descricao_00003Context context)
     {
         _context = context;
     }

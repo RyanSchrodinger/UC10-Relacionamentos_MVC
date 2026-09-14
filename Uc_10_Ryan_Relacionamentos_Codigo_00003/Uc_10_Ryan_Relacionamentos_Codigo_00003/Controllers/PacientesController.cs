@@ -48,7 +48,7 @@ namespace Uc_10_Ryan_Relacionamentos_Codigo_00003.Controllers
         // GET: Pacientes/Create
         public IActionResult Create()
         {
-            ViewData["MedicoId"] = new SelectList(_context.Medico, "MedicoId", "CRM");
+            ViewData["MedicoId"] = new SelectList(_context.Medico, "MedicoId", "MedicoId");
             return View();
         }
 

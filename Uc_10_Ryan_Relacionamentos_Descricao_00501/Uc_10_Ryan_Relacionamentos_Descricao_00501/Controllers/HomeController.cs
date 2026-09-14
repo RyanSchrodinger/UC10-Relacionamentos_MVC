@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Uc_10_Ryan_Relacionamentos_Descricao_501.Models;
+using Uc_10_Ryan_Relacionamentos_Descricao_00501.Models;
 
-namespace Uc_10_Ryan_Relacionamentos_Descricao_501.Controllers
+namespace Uc_10_Ryan_Relacionamentos_Descricao_00501.Controllers
 {
     public class HomeController : Controller
     {

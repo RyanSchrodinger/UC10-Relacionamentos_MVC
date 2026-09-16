@@ -1,0 +1,305 @@
+﻿.paciente-hero {
+    display: grid;
+    grid-template-columns: 1.35fr 0.75fr;
+    gap: 48px;
+    align-items: center;
+    min-height: 470px;
+    margin: 32px 0 72px;
+    padding: 64px;
+    border-radius: 24px;
+    background: linear-gradient(135deg, #f0f5ff 0%, #e2ebfb 100%);
+}
+
+.paciente-etiqueta,
+.paciente-titulo-secao span,
+.paciente-chamada span {
+    color: #4777b8;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.paciente-hero h1 {
+    max-width: 680px;
+    margin: 14px 0 20px;
+    color: #243f66;
+    font-size: clamp(2.3rem, 5vw, 4rem);
+    font-weight: 750;
+    line-height: 1.08;
+}
+
+.paciente-hero-conteudo > p {
+    max-width: 620px;
+    margin: 0;
+    color: #5f7088;
+    font-size: 1.08rem;
+    line-height: 1.7;
+}
+
+.paciente-acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 32px;
+}
+
+.paciente-botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 22px;
+    border: 2px solid #3f6fae;
+    border-radius: 8px;
+    font-weight: 650;
+    text-decoration: none;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+    .paciente-botao:hover {
+        transform: translateY(-2px);
+    }
+
+.paciente-botao-principal {
+    background-color: #3f6fae;
+    color: #fff;
+}
+
+    .paciente-botao-principal:hover {
+        background-color: #315b91;
+        color: #fff;
+    }
+
+.paciente-botao-secundario {
+    background-color: transparent;
+    color: #3f6fae;
+}
+
+    .paciente-botao-secundario:hover {
+        background-color: #fff;
+        color: #315b91;
+    }
+
+.paciente-hero-painel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 270px;
+    padding: 38px;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.72);
+    text-align: center;
+    box-shadow: 0 18px 45px rgba(54, 86, 132, 0.12);
+}
+
+.paciente-painel-icone {
+    display: grid;
+    width: 74px;
+    height: 74px;
+    margin-bottom: 20px;
+    place-items: center;
+    border-radius: 50%;
+    background-color: #3f6fae;
+    color: white;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.paciente-hero-painel strong {
+    color: #243f66;
+    font-size: 1.35rem;
+}
+
+.paciente-hero-painel p {
+    max-width: 240px;
+    margin: 8px 0 0;
+    color: #6d7d93;
+}
+
+.paciente-beneficios {
+    padding-bottom: 72px;
+}
+
+.paciente-titulo-secao,
+.orientacoes-cabecalho {
+    max-width: 720px;
+    margin: 0 auto 36px;
+    text-align: center;
+}
+
+    .paciente-titulo-secao h2,
+    .orientacoes-cabecalho h1,
+    .paciente-chamada h2 {
+        margin: 10px 0 0;
+        color: #294768;
+        font-weight: 700;
+    }
+
+.paciente-grade {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.paciente-cartao {
+    padding: 30px;
+    border: 1px solid #dce5f2;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 0 8px 25px rgba(48, 77, 116, 0.06);
+}
+
+    .paciente-cartao > span {
+        color: #91acd0;
+        font-size: 0.9rem;
+        font-weight: 750;
+    }
+
+    .paciente-cartao h3 {
+        margin: 16px 0 10px;
+        color: #315577;
+        font-size: 1.25rem;
+    }
+
+    .paciente-cartao p,
+    .orientacao-cartao p {
+        margin: 0;
+        color: #68788d;
+        line-height: 1.65;
+    }
+
+.orientacoes-cabecalho {
+    padding-top: 48px;
+}
+
+    .orientacoes-cabecalho h1 {
+        font-size: clamp(2rem, 4vw, 3.2rem);
+    }
+
+    .orientacoes-cabecalho p {
+        margin: 16px auto 0;
+        color: #68788d;
+        font-size: 1.05rem;
+        line-height: 1.65;
+    }
+
+.orientacoes-grade {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-bottom: 64px;
+}
+
+.orientacao-cartao {
+    display: flex;
+    gap: 22px;
+    padding: 28px;
+    border: 1px solid #dce5f2;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 0 8px 25px rgba(48, 77, 116, 0.06);
+}
+
+.orientacao-numero {
+    display: grid;
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    place-items: center;
+    border-radius: 12px;
+    background-color: #e7effb;
+    color: #3f6fae;
+    font-weight: 750;
+}
+
+.orientacao-cartao h2 {
+    margin: 0 0 8px;
+    color: #315577;
+    font-size: 1.2rem;
+}
+
+.paciente-chamada {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 72px;
+    padding: 38px 42px;
+    border-radius: 18px;
+    background-color: #294768;
+}
+
+    .paciente-chamada span {
+        color: #a9c8ec;
+    }
+
+    .paciente-chamada h2 {
+        color: white;
+    }
+
+    .paciente-chamada p {
+        margin: 8px 0 0;
+        color: #d1deec;
+    }
+
+.paciente-botao-claro {
+    border-color: white;
+    background-color: white;
+    color: #294768;
+}
+
+    .paciente-botao-claro:hover {
+        background-color: #eaf1fa;
+        color: #294768;
+    }
+
+@media (max-width: 900px) {
+    .paciente-hero {
+        grid-template-columns: 1fr;
+        padding: 44px;
+    }
+
+    .paciente-grade {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .paciente-hero {
+        gap: 30px;
+        min-height: auto;
+        margin-top: 18px;
+        padding: 32px 22px;
+        border-radius: 16px;
+    }
+
+        .paciente-hero h1 {
+            font-size: 2.35rem;
+        }
+
+    .paciente-acoes,
+    .paciente-chamada {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .paciente-grade,
+    .orientacoes-grade {
+        grid-template-columns: 1fr;
+    }
+
+    .paciente-hero-painel {
+        min-height: 230px;
+    }
+
+    .orientacao-cartao {
+        flex-direction: column;
+    }
+
+    .paciente-chamada {
+        padding: 30px 24px;
+    }
+}

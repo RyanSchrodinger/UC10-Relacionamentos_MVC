@@ -25,6 +25,18 @@ namespace Uc_10_Ryan_Relacionamentos_Descricao_00500.Controllers
             return View(await _context.Paciente.ToListAsync());
         }
 
+        // GET: Paciente/AreaDoPaciente
+        public IActionResult AreaDoPaciente()
+        {
+            return View();
+        }
+
+        // GET: Paciente/Orientacoes
+        public IActionResult Orientacoes()
+        {
+            return View();
+        }
+
         // GET: Paciente/Details/5
         public async Task<IActionResult> Details(int? id)
         {

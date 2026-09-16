@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Orientações ao paciente";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/paciente.css" asp-append-version="true" />
+}
+
+<section class="orientacoes-cabecalho">
+    <span class="paciente-etiqueta">Antes do atendimento</span>
+    <h1>Orientações para sua consulta</h1>
+    <p>
+        Alguns cuidados simples ajudam a tornar seu atendimento mais tranquilo,
+        rápido e completo.
+    </p>
+</section>
+
+<section class="orientacoes-grade">
+    <article class="orientacao-cartao">
+        <span class="orientacao-numero">01</span>
+        <div>
+            <h2>Separe seus documentos</h2>
+            <p>Tenha em mãos um documento com foto e as informações solicitadas pela clínica.</p>
+        </div>
+    </article>
+    <article class="orientacao-cartao">
+        <span class="orientacao-numero">02</span>
+        <div>
+            <h2>Chegue com antecedência</h2>
+            <p>Procure chegar alguns minutos antes para realizar a identificação com tranquilidade.</p>
+        </div>
+    </article>
+    <article class="orientacao-cartao">
+        <span class="orientacao-numero">03</span>
+        <div>
+            <h2>Leve exames anteriores</h2>
+            <p>Caso possua exames ou receitas recentes, leve-os para auxiliar na avaliação médica.</p>
+        </div>
+    </article>
+    <article class="orientacao-cartao">
+        <span class="orientacao-numero">04</span>
+        <div>
+            <h2>Anote suas dúvidas</h2>
+            <p>Prepare uma lista com sintomas e perguntas importantes para conversar com o médico.</p>
+        </div>
+    </article>
+</section>
+
+<section class="paciente-chamada">
+    <div>
+        <span>Cadastro de pacientes</span>
+        <h2>Acesse os registros do sistema</h2>
+        <p>Consulte, cadastre ou atualize as informações dos pacientes.</p>
+    </div>
+    <a class="paciente-botao paciente-botao-claro"
+       asp-controller="Paciente" asp-action="Index">
+        Acessar pacientes
+    </a>
+</section>

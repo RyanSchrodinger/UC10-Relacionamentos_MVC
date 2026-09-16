@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Área do paciente";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/paciente.css" asp-append-version="true" />
+}
+
+<section class="paciente-hero">
+    <div class="paciente-hero-conteudo">
+        <span class="paciente-etiqueta">Você no centro do cuidado</span>
+        <h1>Uma experiência mais simples para nossos pacientes</h1>
+        <p>
+            Encontre informações importantes e acesse o cadastro de pacientes
+            de maneira rápida e organizada.
+        </p>
+
+        <div class="paciente-acoes">
+            <a class="paciente-botao paciente-botao-principal"
+               asp-controller="Paciente" asp-action="Index">
+                Ver pacientes cadastrados
+            </a>
+            <a class="paciente-botao paciente-botao-secundario"
+               asp-controller="Paciente" asp-action="Orientacoes">
+                Ver orientações
+            </a>
+        </div>
+    </div>
+
+    <div class="paciente-hero-painel">
+        <span class="paciente-painel-icone">+</span>
+        <strong>Cuidado próximo</strong>
+        <p>Informação, acolhimento e atenção em cada etapa.</p>
+    </div>
+</section>
+
+<section class="paciente-beneficios">
+    <header class="paciente-titulo-secao">
+        <span>Atendimento pensado para você</span>
+        <h2>Mais facilidade em todos os momentos</h2>
+    </header>
+
+    <div class="paciente-grade">
+        <article class="paciente-cartao">
+            <span>01</span>
+            <h3>Cadastro organizado</h3>
+            <p>As informações dos pacientes ficam reunidas de forma simples e fácil de consultar.</p>
+        </article>
+        <article class="paciente-cartao">
+            <span>02</span>
+            <h3>Atendimento acolhedor</h3>
+            <p>Nossa equipe está preparada para receber cada pessoa com respeito e atenção.</p>
+        </article>
+        <article class="paciente-cartao">
+            <span>03</span>
+            <h3>Informações importantes</h3>
+            <p>Acesse orientações para se preparar e aproveitar melhor sua consulta.</p>
+        </article>
+    </div>
+</section>

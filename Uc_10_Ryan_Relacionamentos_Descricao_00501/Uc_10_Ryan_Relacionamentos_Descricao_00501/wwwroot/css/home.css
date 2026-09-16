@@ -1,0 +1,266 @@
+﻿.home-hero {
+    display: grid;
+    grid-template-columns: 1.35fr 0.75fr;
+    gap: 48px;
+    align-items: center;
+    min-height: 500px;
+    margin: 32px 0 72px;
+    padding: 64px;
+    border-radius: 24px;
+    background: linear-gradient(135deg, #edf1f5, #d9e1e8);
+}
+
+    .home-hero > div > span,
+    .home-secao header span,
+    .home-chamada span {
+        color: #bd4f2d;
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+    }
+
+    .home-hero h1 {
+        max-width: 700px;
+        margin: 14px 0 20px;
+        color: #24313c;
+        font-size: clamp(2.5rem, 5vw, 4.3rem);
+        font-weight: 750;
+        line-height: 1.06;
+    }
+
+    .home-hero p {
+        color: #62717c;
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+
+/* Botões */
+.home-acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 32px;
+}
+
+.home-botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 22px;
+    border: 2px solid #bd4f2d;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+    .home-botao:hover {
+        transform: translateY(-2px);
+    }
+
+    .home-botao.principal {
+        background: #bd4f2d;
+        color: #fff;
+    }
+
+        .home-botao.principal:hover {
+            background: #a94325;
+            border-color: #a94325;
+        }
+
+    .home-botao.secundario {
+        color: #bd4f2d;
+        background: transparent;
+    }
+
+        .home-botao.secundario:hover {
+            background: #bd4f2d;
+            color: #fff;
+        }
+
+    .home-botao.claro {
+        border-color: #fff;
+        background: #fff;
+        color: #24313c;
+    }
+
+        .home-botao.claro:hover {
+            background: #edf1f5;
+        }
+
+/* Destaque */
+.home-destaque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 280px;
+    padding: 38px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    box-shadow: 0 18px 45px rgba(36, 49, 60, 0.12);
+}
+
+    .home-destaque b {
+        display: grid;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+        place-items: center;
+        border-radius: 50%;
+        background: #24313c;
+        color: #fff;
+        font-size: 1.6rem;
+    }
+
+    .home-destaque strong {
+        color: #24313c;
+        font-size: 1.3rem;
+    }
+
+    .home-destaque p {
+        margin-top: 10px;
+    }
+
+/* Seção */
+.home-secao {
+    margin-bottom: 72px;
+}
+
+    .home-secao header {
+        margin-bottom: 36px;
+        text-align: center;
+    }
+
+    .home-secao h2,
+    .home-chamada h2 {
+        margin: 10px 0;
+        color: #24313c;
+    }
+
+/* Cards */
+.home-grade {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+    .home-grade article {
+        display: flex;
+        flex-direction: column;
+        min-height: 240px;
+        padding: 28px;
+        border: 1px solid #dce2e6;
+        border-radius: 16px;
+        background: #fff;
+        box-shadow: 0 8px 25px rgba(36, 49, 60, 0.06);
+        transition: 0.2s ease;
+    }
+
+        .home-grade article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 14px 30px rgba(36, 49, 60, 0.11);
+        }
+
+        .home-grade article > b {
+            color: #d28a73;
+            font-size: 0.9rem;
+        }
+
+    .home-grade h3 {
+        margin: 18px 0 10px;
+        color: #354550;
+    }
+
+    .home-grade p {
+        margin-bottom: 20px;
+        color: #6d7a83;
+        line-height: 1.6;
+    }
+
+    .home-grade a {
+        margin-top: auto;
+        color: #bd4f2d;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+        .home-grade a:hover {
+            color: #943a20;
+        }
+
+/* Chamada final */
+.home-chamada {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 72px;
+    padding: 38px 42px;
+    border-radius: 18px;
+    background: #24313c;
+}
+
+    .home-chamada h2 {
+        color: #fff;
+    }
+
+/* Tablet */
+@media (max-width: 950px) {
+    .home-hero {
+        grid-template-columns: 1fr;
+        padding: 44px;
+    }
+
+    .home-grade {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Celular */
+@media (max-width: 650px) {
+    .home-hero {
+        gap: 30px;
+        margin-top: 20px;
+        padding: 32px 22px;
+    }
+
+        .home-hero h1 {
+            font-size: 2.5rem;
+        }
+
+        .home-hero p {
+            font-size: 1rem;
+        }
+
+    .home-acoes {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .home-botao {
+        width: 100%;
+    }
+
+    .home-destaque {
+        min-height: 230px;
+        padding: 30px 20px;
+    }
+
+    .home-grade {
+        grid-template-columns: 1fr;
+    }
+
+    .home-chamada {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 32px 24px;
+        text-align: center;
+    }
+
+        .home-chamada .home-botao {
+            width: 100%;
+        }
+}

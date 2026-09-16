@@ -1,0 +1,11 @@
+﻿@import url("paginas-carros.css");
+
+:root {
+    --cor: #b5502f;
+    --escuro: #633322;
+    --texto: #80675e;
+    --fundo1: #fff1eb;
+    --fundo2: #f7ddd2;
+    --borda: #f0dcd4;
+    --suave: #cc8b74;
+}

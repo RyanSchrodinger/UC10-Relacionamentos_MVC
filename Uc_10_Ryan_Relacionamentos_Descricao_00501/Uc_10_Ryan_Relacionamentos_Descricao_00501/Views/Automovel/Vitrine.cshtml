@@ -1,0 +1,91 @@
+@{
+    ViewData["Title"] = "Automóveis";
+}
+
+@section Styles {
+    <link rel="stylesheet"
+          href="~/css/automovel.css"
+          asp-append-version="true" />
+}
+
+<section class="pagina-hero">
+    <div class="hero-conteudo">
+        <span class="etiqueta">
+            Encontre seu próximo carro
+        </span>
+
+        <h1>Automóveis para todos os caminhos</h1>
+
+        <p>
+            Conheça modelos preparados para unir conforto,
+            segurança e desempenho.
+        </p>
+
+        <div class="acoes">
+            <a class="botao principal"
+               asp-controller="Automovel"
+               asp-action="Index">
+                Ver automóveis cadastrados
+            </a>
+
+            <a class="botao secundario"
+               asp-controller="Automovel"
+               asp-action="Cuidados">
+                Cuidados com o veículo
+            </a>
+        </div>
+    </div>
+
+    <div class="destaque">
+        <span class="simbolo">A</span>
+
+        <strong>Escolha com confiança</strong>
+
+        <p>
+            Informações organizadas para ajudar na sua decisão.
+        </p>
+    </div>
+</section>
+
+<section class="secao">
+    <header class="titulo">
+        <span>Nossa vitrine</span>
+
+        <h2>O carro certo para cada momento</h2>
+    </header>
+
+    <div class="grade">
+        <article>
+            <b>01</b>
+
+            <h3>Modelos variados</h3>
+
+            <p>
+                Opções para diferentes rotinas,
+                necessidades e estilos.
+            </p>
+        </article>
+
+        <article>
+            <b>02</b>
+
+            <h3>Informações completas</h3>
+
+            <p>
+                Modelo, cor, ano, placa e marca reunidos
+                em um só lugar.
+            </p>
+        </article>
+
+        <article>
+            <b>03</b>
+
+            <h3>Compra segura</h3>
+
+            <p>
+                Conheça o veículo antes de avançar
+                para a negociação.
+            </p>
+        </article>
+    </div>
+</section>

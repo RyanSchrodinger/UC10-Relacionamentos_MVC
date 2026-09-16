@@ -24,6 +24,15 @@ namespace Uc_10_Ryan_Relacionamentos_Descricao_00501.Controllers
             return View(await _context.Marca.ToListAsync());
         }
 
+        public IActionResult ComoEscolher()
+        {
+            return View();
+        }
+
+        public IActionResult NossasMarcas()
+        {
+            return View();
+        }
         // GET: Marca/Details/5
         public async Task<IActionResult> Details(int? id)
         {

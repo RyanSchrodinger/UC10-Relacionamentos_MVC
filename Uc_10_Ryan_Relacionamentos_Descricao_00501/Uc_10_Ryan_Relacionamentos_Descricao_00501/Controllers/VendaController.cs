@@ -24,6 +24,15 @@ namespace Uc_10_Ryan_Relacionamentos_Descricao_00501.Controllers
             var uc_10_Ryan_Relacionamentos_Descricao_00501Context = _context.Venda.Include(v => v.Automovel).Include(v => v.Cliente).Include(v => v.Vendedor);
             return View(await uc_10_Ryan_Relacionamentos_Descricao_00501Context.ToListAsync());
         }
+        public IActionResult ComoComprar()
+        {
+            return View();
+        }
+
+        public IActionResult EtapasDaVenda()
+        {
+            return View();
+        }
 
         // GET: Venda/Details/5
         public async Task<IActionResult> Details(int? id)

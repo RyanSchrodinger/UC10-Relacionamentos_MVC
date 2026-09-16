@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Como funciona";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/consulta.css" asp-append-version="true" />
+}
+
+<section class="funcionamento-cabecalho">
+    <span class="consulta-etiqueta">Passo a passo</span>
+    <h1>Como registrar uma consulta?</h1>
+    <p>
+        Antes de criar uma consulta, verifique se o paciente, o médico
+        e o tipo de atendimento já estão cadastrados.
+    </p>
+</section>
+
+<section class="funcionamento-etapas">
+    <article class="funcionamento-item">
+        <span>01</span>
+        <div>
+            <h2>Cadastre o paciente</h2>
+            <p>Informe o nome e o e-mail da pessoa que receberá o atendimento.</p>
+        </div>
+    </article>
+    <article class="funcionamento-item">
+        <span>02</span>
+        <div>
+            <h2>Escolha o médico</h2>
+            <p>Selecione o profissional responsável entre os médicos cadastrados.</p>
+        </div>
+    </article>
+    <article class="funcionamento-item">
+        <span>03</span>
+        <div>
+            <h2>Defina o atendimento</h2>
+            <p>Escolha o tipo de consulta adequado para a necessidade do paciente.</p>
+        </div>
+    </article>
+    <article class="funcionamento-item">
+        <span>04</span>
+        <div>
+            <h2>Confirme o registro</h2>
+            <p>Revise as escolhas e salve a nova consulta no sistema.</p>
+        </div>
+    </article>
+</section>
+
+<section class="consulta-chamada">
+    <div>
+        <span>Gerenciamento de consultas</span>
+        <h2>Pronto para continuar?</h2>
+        <p>Acesse a listagem para consultar ou registrar um novo atendimento.</p>
+    </div>
+    <a class="consulta-botao consulta-botao-claro"
+       asp-controller="Consulta" asp-action="Index">
+        Acessar consultas
+    </a>
+</section>

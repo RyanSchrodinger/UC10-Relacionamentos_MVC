@@ -26,6 +26,18 @@ namespace Uc_10_Ryan_Relacionamentos_Descricao_00500.Controllers
             return View(await uc_10_Ryan_Relacionamentos_Descricao_00500Context.ToListAsync());
         }
 
+        // GET: Consulta/Agendamentos
+        public IActionResult Agendamentos()
+        {
+            return View();
+        }
+
+        // GET: Consulta/ComoFunciona
+        public IActionResult ComoFunciona()
+        {
+            return View();
+        }
+
         // GET: Consulta/Details/5
         public async Task<IActionResult> Details(int? id)
         {

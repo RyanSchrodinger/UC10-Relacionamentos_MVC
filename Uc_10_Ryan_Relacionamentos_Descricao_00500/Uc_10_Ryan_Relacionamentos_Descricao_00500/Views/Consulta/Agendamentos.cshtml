@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Consultas";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/consulta.css" asp-append-version="true" />
+}
+
+<section class="consulta-hero">
+    <div class="consulta-hero-conteudo">
+        <span class="consulta-etiqueta">Sua saúde merece atenção</span>
+        <h1>Organize suas consultas com facilidade</h1>
+        <p>
+            Consulte os atendimentos registrados no sistema e encontre as
+            informações do paciente, do médico e do tipo de consulta.
+        </p>
+
+        <div class="consulta-acoes">
+            <a class="consulta-botao consulta-botao-principal"
+               asp-controller="Consulta" asp-action="Index">
+                Ver consultas cadastradas
+            </a>
+            <a class="consulta-botao consulta-botao-secundario"
+               asp-controller="Consulta" asp-action="ComoFunciona">
+                Entender como funciona
+            </a>
+        </div>
+    </div>
+
+    <div class="consulta-hero-painel">
+        <div class="consulta-simbolo">✓</div>
+        <strong>Atendimento organizado</strong>
+        <span>Paciente, médico e modalidade reunidos em um único registro.</span>
+    </div>
+</section>
+
+<section class="consulta-secao">
+    <header class="consulta-titulo">
+        <span>Informações conectadas</span>
+        <h2>Tudo o que compõe uma consulta</h2>
+    </header>
+
+    <div class="consulta-grade">
+        <article class="consulta-cartao">
+            <span class="consulta-cartao-numero">01</span>
+            <h3>Paciente</h3>
+            <p>Identifica a pessoa que receberá o atendimento na clínica.</p>
+        </article>
+        <article class="consulta-cartao">
+            <span class="consulta-cartao-numero">02</span>
+            <h3>Médico</h3>
+            <p>Informa qual profissional será responsável pelo atendimento.</p>
+        </article>
+        <article class="consulta-cartao">
+            <span class="consulta-cartao-numero">03</span>
+            <h3>Tipo de consulta</h3>
+            <p>Define a modalidade, a descrição e o valor do atendimento.</p>
+        </article>
+    </div>
+</section>

@@ -19,5 +19,6 @@ namespace Uc_10_Ryan_Relacionamentos_Descricao_00501.Models
 
         public int MarcaId { get; set; }
         public Marca Marca { get; set; } 
+        public virtual ICollection<Venda> Vendas { get; set; } = new List<Venda>();
     }
 }

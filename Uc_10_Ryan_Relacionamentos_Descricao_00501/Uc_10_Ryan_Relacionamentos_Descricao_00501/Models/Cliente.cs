@@ -12,5 +12,7 @@ namespace Uc_10_Ryan_Relacionamentos_Descricao_00501.Models
         public string Email { get;set; }
         [Required(ErrorMessage = "O Cpf é obrigatório.")]
         public string Cpf { get; set; }
+
+        public virtual ICollection<Venda> Vendas { get; set; } = new List<Venda>();
     }
 }

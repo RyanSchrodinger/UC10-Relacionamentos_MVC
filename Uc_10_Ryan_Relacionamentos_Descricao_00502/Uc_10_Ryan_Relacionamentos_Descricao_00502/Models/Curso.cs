@@ -1,27 +1,23 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
 namespace Uc_10_Ryan_Relacionamentos_Descricao_00502.Models
 {
-    using System.ComponentModel.DataAnnotations;
-
-    namespace Uc_10_Ryan_Relacionamentos_Descricao_00501.Models
+    public class Curso
     {
-        public class Curso
-        {
-            public int Id { get; set; }
+        public int Id { get; set; }
 
-            [Required]
-            public string Nome { get; set; }
+        [Required]
+        [MaxLength(100)]
+        public string Nome { get; set; } = string.Empty;
 
-            [Required]
-            public int CargaHoraria { get; set; }
+        [Required]
+        public int CargaHoraria { get; set; }
 
-            [Required]
-            public int ProfessorId { get; set; }
+        public int ProfessorId { get; set; }
 
-            public Professor Professor { get; set; }
+        public Professor? Professor { get; set; }
 
-            public ICollection<Matricula> Matriculas { get; set; }
-        }
+        public ICollection<Matricula> Matriculas { get; set; }
+            = new List<Matricula>();
     }
 }

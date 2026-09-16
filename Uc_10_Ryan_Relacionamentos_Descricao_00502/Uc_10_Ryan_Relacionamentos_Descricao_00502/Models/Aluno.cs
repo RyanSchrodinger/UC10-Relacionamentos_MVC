@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
 namespace Uc_10_Ryan_Relacionamentos_Descricao_00502.Models
 {
@@ -7,11 +7,14 @@ namespace Uc_10_Ryan_Relacionamentos_Descricao_00502.Models
         public int Id { get; set; }
 
         [Required]
-        public string Nome { get; set; }
+        [MaxLength(100)]
+        public string Nome { get; set; } = string.Empty;
 
         [Required]
-        public string Email { get; set; }
+        [MaxLength(150)]
+        public string Email { get; set; } = string.Empty;
 
         public ICollection<Matricula> Matriculas { get; set; }
+            = new List<Matricula>();
     }
 }

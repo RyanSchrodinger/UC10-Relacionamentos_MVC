@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using Uc_10_Ryan_Relacionamentos_Descricao_00502.Models.Uc_10_Ryan_Relacionamentos_Descricao_00501.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace Uc_10_Ryan_Relacionamentos_Descricao_00502.Models
 {
@@ -10,14 +9,12 @@ namespace Uc_10_Ryan_Relacionamentos_Descricao_00502.Models
         [Required]
         public DateTime DataMatricula { get; set; }
 
-        [Required]
         public int AlunoId { get; set; }
 
-        public Aluno Aluno { get; set; }
+        public Aluno? Aluno { get; set; }
 
-        [Required]
         public int CursoId { get; set; }
 
-        public Curso Curso { get; set; }
+        public Curso? Curso { get; set; }
     }
 }

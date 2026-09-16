@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Nossos atendimentos";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/tipo-consulta.css" asp-append-version="true" />
+}
+
+<section class="tipo-hero">
+    <div class="tipo-hero-conteudo">
+        <span class="tipo-etiqueta">Atendimento para cada necessidade</span>
+        <h1>Encontre o cuidado certo para você</h1>
+        <p>
+            Conheça nossas modalidades de consulta e encontre o atendimento
+            mais adequado para cuidar da sua saúde.
+        </p>
+
+        <div class="tipo-acoes">
+            <a class="tipo-botao tipo-botao-principal"
+               asp-controller="TipoConsulta" asp-action="Index">
+                Ver tipos cadastrados
+            </a>
+            <a class="tipo-botao tipo-botao-secundario"
+               asp-controller="TipoConsulta" asp-action="ComoEscolher">
+                Como escolher
+            </a>
+        </div>
+    </div>
+
+    <div class="tipo-hero-painel">
+        <div class="tipo-simbolo">+</div>
+        <strong>Atendimento completo</strong>
+        <span>Opções pensadas para diferentes momentos e necessidades.</span>
+    </div>
+</section>
+
+<section class="tipo-secao">
+    <header class="tipo-titulo">
+        <span>Conheça as possibilidades</span>
+        <h2>Modalidades de atendimento</h2>
+    </header>
+
+    <div class="tipo-grade">
+        <article class="tipo-cartao">
+            <span class="tipo-cartao-numero">01</span>
+            <h3>Primeira consulta</h3>
+            <p>Avaliação inicial para conhecer o paciente, seus sintomas e seu histórico de saúde.</p>
+        </article>
+        <article class="tipo-cartao">
+            <span class="tipo-cartao-numero">02</span>
+            <h3>Consulta de rotina</h3>
+            <p>Acompanhamento periódico para prevenção e manutenção da saúde.</p>
+        </article>
+        <article class="tipo-cartao">
+            <span class="tipo-cartao-numero">03</span>
+            <h3>Consulta de retorno</h3>
+            <p>Reavaliação após exames ou tratamentos indicados pelo profissional.</p>
+        </article>
+    </div>
+</section>

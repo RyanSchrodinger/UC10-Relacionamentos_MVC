@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Como escolher";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/tipo-consulta.css" asp-append-version="true" />
+}
+
+<section class="escolha-cabecalho">
+    <span class="tipo-etiqueta">Escolha com tranquilidade</span>
+    <h1>Qual tipo de consulta escolher?</h1>
+    <p>
+        Entender o objetivo do atendimento ajuda você a escolher a opção
+        mais adequada para o momento.
+    </p>
+</section>
+
+<section class="escolha-lista">
+    <article class="escolha-item">
+        <span>01</span>
+        <div>
+            <h2>É seu primeiro atendimento?</h2>
+            <p>Escolha a primeira consulta para apresentar seu histórico e receber uma avaliação inicial.</p>
+        </div>
+    </article>
+    <article class="escolha-item">
+        <span>02</span>
+        <div>
+            <h2>Precisa acompanhar sua saúde?</h2>
+            <p>A consulta de rotina é indicada para prevenção e acompanhamento periódico.</p>
+        </div>
+    </article>
+    <article class="escolha-item">
+        <span>03</span>
+        <div>
+            <h2>Já realizou exames?</h2>
+            <p>Escolha o retorno para mostrar resultados e continuar um tratamento já iniciado.</p>
+        </div>
+    </article>
+    <article class="escolha-item">
+        <span>04</span>
+        <div>
+            <h2>Ainda está em dúvida?</h2>
+            <p>Entre em contato com a clínica para receber uma orientação antes de escolher.</p>
+        </div>
+    </article>
+</section>
+
+<section class="tipo-chamada">
+    <div>
+        <span>Tipos de consulta</span>
+        <h2>Consulte as opções cadastradas</h2>
+        <p>Veja os nomes, descrições e valores disponíveis no sistema.</p>
+    </div>
+    <a class="tipo-botao tipo-botao-claro"
+       asp-controller="TipoConsulta" asp-action="Index">
+        Acessar tipos de consulta
+    </a>
+</section>

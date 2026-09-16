@@ -24,6 +24,16 @@ namespace Uc_10_Ryan_Relacionamentos_Descricao_00501.Controllers
             return View(await _context.Cliente.ToListAsync());
         }
 
+        public IActionResult AreaDoCliente()
+        {
+            return View();
+        }
+
+        public IActionResult Vantagens()
+        {
+            return View();
+        }
+
         // GET: Cliente/Details/5
         public async Task<IActionResult> Details(int? id)
         {

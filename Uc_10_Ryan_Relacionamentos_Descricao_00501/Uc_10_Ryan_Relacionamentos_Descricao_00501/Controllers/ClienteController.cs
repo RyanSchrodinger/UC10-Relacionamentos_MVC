@@ -29,7 +29,7 @@ namespace Uc_10_Ryan_Relacionamentos_Descricao_00501.Controllers
             return View();
         }
 
-        public IActionResult Vantagens()
+        public IActionResult Vantagens ()
         {
             return View();
         }

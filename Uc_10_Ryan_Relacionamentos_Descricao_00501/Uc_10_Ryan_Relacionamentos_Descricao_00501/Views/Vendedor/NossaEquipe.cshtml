@@ -1,0 +1,66 @@
+@{
+    ViewData["Title"] = "Nossa equipe";
+}
+
+@section Styles {
+    <link rel="stylesheet"
+          href="~/css/vendedor.css"
+          asp-append-version="true" />
+}
+
+<section class="pagina-hero">
+    <div class="hero-conteudo">
+        <span class="etiqueta">Especialistas em automóveis</span>
+
+        <h1>Uma equipe pronta para ajudar na sua escolha</h1>
+
+        <p>Nossos vendedores oferecem orientação e transparência em toda a negociação.</p>
+
+        <div class="acoes">
+            <a class="botao principal"
+               asp-controller="Vendedor"
+               asp-action="Index">
+                Ver vendedores cadastrados
+            </a>
+
+            <a class="botao secundario"
+               asp-controller="Vendedor"
+               asp-action="Atendimento">
+                Nosso atendimento
+            </a>
+        </div>
+    </div>
+
+    <div class="destaque">
+        <span class="simbolo">V</span>
+        <strong>Escolha com confiança</strong>
+        <p>Atendimento, informação e transparência em cada etapa.</p>
+    </div>
+</section>
+
+<section class="secao">
+    <header class="titulo">
+        <span>Nossos diferenciais</span>
+        <h2>Uma experiência pensada para você</h2>
+    </header>
+
+    <div class="grade">
+        <article>
+            <b>01</b>
+            <h3>Conhecimento</h3>
+            <p>Informações claras para tornar sua experiência mais simples e segura.</p>
+        </article>
+
+        <article>
+            <b>02</b>
+            <h3>Transparência</h3>
+            <p>Informações claras para tornar sua experiência mais simples e segura.</p>
+        </article>
+
+        <article>
+            <b>03</b>
+            <h3>Proximidade</h3>
+            <p>Informações claras para tornar sua experiência mais simples e segura.</p>
+        </article>
+    </div>
+</section>

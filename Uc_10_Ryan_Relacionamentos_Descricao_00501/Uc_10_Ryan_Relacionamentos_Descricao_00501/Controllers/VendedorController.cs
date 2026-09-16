@@ -24,6 +24,15 @@ namespace Uc_10_Ryan_Relacionamentos_Descricao_00501.Controllers
             return View(await _context.Vendedor.ToListAsync());
         }
 
+        public IActionResult NossaEquipe()
+        {
+            return View();
+        }
+
+        public IActionResult Atendimento()
+        {
+            return View();
+        }
         // GET: Vendedor/Details/5
         public async Task<IActionResult> Details(int? id)
         {

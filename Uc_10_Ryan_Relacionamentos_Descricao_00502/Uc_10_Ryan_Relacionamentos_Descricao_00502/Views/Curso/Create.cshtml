@@ -1,10 +1,10 @@
 ﻿@model Uc_10_Ryan_Relacionamentos_Descricao_00502.Models.Curso
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Cadastrar Curso";
 }
 
-<h1>Create</h1>
+<h1>Cadastrar Curso</h1>
 
 <h4>Curso</h4>
 <hr />
@@ -27,14 +27,14 @@
                 <select asp-for="ProfessorId" class ="form-control" asp-items="ViewBag.ProfessorId"></select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Criar" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Voltar para a listagem de aluno</a>
 </div>
 
 @section Scripts {

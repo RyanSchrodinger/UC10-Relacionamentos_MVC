@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "Nossa equipe";
+}
+
+<section class="hero-medicos">
+    <div class="hero-medicos-conteudo">
+        <span class="hero-medicos-etiqueta">
+            Cuidado em primeiro lugar
+        </span>
+
+        <h1>Os melhores profissionais para cuidar de você</h1>
+
+        <p>
+            Nossa equipe reúne médicos qualificados, atendimento
+            humanizado e o cuidado que você e sua família merecem.
+        </p>
+
+        <div class="hero-medicos-acoes">
+            <a class="botao-clinica botao-clinica-principal"
+               asp-controller="Medico"
+               asp-action="Index">
+                Ver médicos cadastrados
+            </a>
+
+            <a class="botao-clinica botao-clinica-secundario"
+               asp-controller="Medico"
+               asp-action="Especialidades">
+                Conhecer especialidades
+            </a>
+        </div>
+    </div>
+
+    <div class="hero-medicos-destaque">
+        <div class="simbolo-medico">+</div>
+
+        <strong>Saúde e confiança</strong>
+
+        <span>
+            Atendimento feito com atenção e respeito
+        </span>
+    </div>
+</section>
+
+<section class="secao-medicos">
+    <div class="titulo-secao">
+        <span>Por que escolher nossa equipe?</span>
+
+        <h2>Um atendimento completo e acolhedor</h2>
+    </div>
+
+    <div class="grade-diferenciais">
+        <article class="cartao-informativo">
+            <span class="numero-cartao">01</span>
+
+            <h3>Profissionais qualificados</h3>
+
+            <p>
+                Médicos preparados para oferecer diagnósticos
+                e orientações com responsabilidade.
+            </p>
+        </article>
+
+        <article class="cartao-informativo">
+            <span class="numero-cartao">02</span>
+
+            <h3>Atendimento humanizado</h3>
+
+            <p>
+                Cada paciente é ouvido com atenção e recebe um
+                cuidado adequado às suas necessidades.
+            </p>
+        </article>
+
+        <article class="cartao-informativo">
+            <span class="numero-cartao">03</span>
+
+            <h3>Cuidado e confiança</h3>
+
+            <p>
+                Um ambiente tranquilo para que você se sinta
+                seguro durante todo o atendimento.
+            </p>
+        </article>
+    </div>
+</section>

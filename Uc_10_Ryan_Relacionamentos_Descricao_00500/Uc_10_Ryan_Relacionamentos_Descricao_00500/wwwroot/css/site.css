@@ -1,22 +1,304 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #f5f8fa;
+    color: #263238;
+}
+
+.hero-medicos {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 48px;
+    align-items: center;
+    min-height: 480px;
+    margin: 32px 0 72px;
+    padding: 64px;
+    border-radius: 24px;
+    background: linear-gradient(135deg, #e8f7f7 0%, #d7edf2 100%);
+}
+
+.hero-medicos-etiqueta,
+.titulo-secao span,
+.cabecalho-especialidades > span,
+.chamada-medicos span {
+    color: #168a8a;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.hero-medicos h1 {
+    max-width: 680px;
+    margin: 14px 0 20px;
+    color: #123f4a;
+    font-size: clamp(2.3rem, 5vw, 4rem);
+    font-weight: 750;
+    line-height: 1.08;
+}
+
+.hero-medicos p {
+    max-width: 620px;
+    margin: 0;
+    color: #45646c;
+    font-size: 1.08rem;
+    line-height: 1.7;
+}
+
+.hero-medicos-acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 32px;
+}
+
+.botao-clinica {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 22px;
+    border: 2px solid #176b78;
+    border-radius: 8px;
+    font-weight: 650;
+    text-decoration: none;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+    .botao-clinica:hover {
+        transform: translateY(-2px);
+    }
+
+.botao-clinica-principal {
+    background-color: #176b78;
+    color: white;
+}
+
+    .botao-clinica-principal:hover {
+        background-color: #10545f;
+        color: white;
+    }
+
+.botao-clinica-secundario {
+    background-color: transparent;
+    color: #176b78;
+}
+
+    .botao-clinica-secundario:hover {
+        background-color: white;
+        color: #10545f;
+    }
+
+.hero-medicos-destaque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 280px;
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.72);
+    text-align: center;
+    box-shadow: 0 18px 45px rgba(22, 85, 96, 0.12);
+}
+
+.simbolo-medico {
+    display: grid;
+    width: 76px;
+    height: 76px;
+    margin-bottom: 22px;
+    place-items: center;
+    border-radius: 50%;
+    background-color: #176b78;
+    color: white;
+    font-size: 3rem;
+}
+
+.hero-medicos-destaque strong {
+    color: #123f4a;
+    font-size: 1.35rem;
+}
+
+.hero-medicos-destaque span {
+    max-width: 240px;
+    margin-top: 8px;
+    color: #60777d;
+}
+
+.secao-medicos {
+    padding-bottom: 72px;
+}
+
+.titulo-secao,
+.cabecalho-especialidades {
+    max-width: 720px;
+    margin: 0 auto 36px;
+    text-align: center;
+}
+
+    .titulo-secao h2,
+    .cabecalho-especialidades h1,
+    .chamada-medicos h2 {
+        margin: 10px 0 0;
+        color: #173f49;
+        font-weight: 700;
+    }
+
+.grade-diferenciais,
+.grade-especialidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.cartao-informativo,
+.cartao-especialidade {
+    padding: 30px;
+    border: 1px solid #dce9eb;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 0 8px 25px rgba(21, 73, 82, 0.06);
+}
+
+.numero-cartao {
+    color: #87bfc3;
+    font-size: 0.9rem;
+    font-weight: 750;
+}
+
+.cartao-informativo h3,
+.cartao-especialidade h2 {
+    margin: 16px 0 10px;
+    color: #174d58;
+    font-size: 1.25rem;
+}
+
+.cartao-informativo p,
+.cartao-especialidade p {
+    margin: 0;
+    color: #60777d;
+    line-height: 1.65;
+}
+
+.cabecalho-especialidades {
+    padding-top: 48px;
+}
+
+    .cabecalho-especialidades h1 {
+        font-size: clamp(2rem, 4vw, 3.2rem);
+    }
+
+    .cabecalho-especialidades p {
+        margin: 16px auto 0;
+        color: #60777d;
+        font-size: 1.05rem;
+        line-height: 1.65;
+    }
+
+.grade-especialidades {
+    margin-bottom: 64px;
+}
+
+.cartao-especialidade {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .cartao-especialidade:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 14px 32px rgba(21, 73, 82, 0.12);
+    }
+
+.icone-especialidade {
+    display: grid;
+    width: 52px;
+    height: 52px;
+    place-items: center;
+    border-radius: 12px;
+    background-color: #e1f3f3;
+    color: #176b78;
+    font-weight: 750;
+}
+
+.chamada-medicos {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 72px;
+    padding: 38px 42px;
+    border-radius: 18px;
+    background-color: #153f49;
+}
+
+    .chamada-medicos h2 {
+        color: white;
+    }
+
+    .chamada-medicos p {
+        margin: 8px 0 0;
+        color: #c9dde1;
+    }
+
+@media (max-width: 900px) {
+    .hero-medicos {
+        grid-template-columns: 1fr;
+        padding: 44px;
+    }
+
+    .grade-diferenciais,
+    .grade-especialidades {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-medicos {
+        gap: 30px;
+        min-height: auto;
+        margin-top: 18px;
+        padding: 32px 22px;
+        border-radius: 16px;
+    }
+
+        .hero-medicos h1 {
+            font-size: 2.35rem;
+        }
+
+    .hero-medicos-acoes,
+    .chamada-medicos {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .grade-diferenciais,
+    .grade-especialidades {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-medicos-destaque {
+        min-height: 230px;
+    }
+
+    .chamada-medicos {
+        padding: 30px 24px;
+    }
 }

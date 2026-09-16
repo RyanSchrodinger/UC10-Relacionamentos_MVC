@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Especialidades";
+}
+
+<section class="cabecalho-especialidades">
+    <span>Nossos atendimentos</span>
+    <h1>Especialidades médicas</h1>
+    <p>
+        Conte com profissionais de diferentes áreas para cuidar da sua saúde
+        em todas as fases da vida.
+    </p>
+</section>
+
+<section class="grade-especialidades">
+    <article class="cartao-especialidade">
+        <div class="icone-especialidade">CG</div>
+        <h2>Clínica geral</h2>
+        <p>Avaliação da saúde, prevenção de doenças e acompanhamento dos pacientes.</p>
+    </article>
+    <article class="cartao-especialidade">
+        <div class="icone-especialidade">CA</div>
+        <h2>Cardiologia</h2>
+        <p>Prevenção, diagnóstico e cuidado com o coração e o sistema circulatório.</p>
+    </article>
+    <article class="cartao-especialidade">
+        <div class="icone-especialidade">PE</div>
+        <h2>Pediatria</h2>
+        <p>Acompanhamento da saúde e do desenvolvimento de crianças e adolescentes.</p>
+    </article>
+    <article class="cartao-especialidade">
+        <div class="icone-especialidade">OR</div>
+        <h2>Ortopedia</h2>
+        <p>Cuidados com ossos, músculos, articulações e movimentos do corpo.</p>
+    </article>
+    <article class="cartao-especialidade">
+        <div class="icone-especialidade">DE</div>
+        <h2>Dermatologia</h2>
+        <p>Tratamento e prevenção de condições relacionadas à pele, cabelos e unhas.</p>
+    </article>
+    <article class="cartao-especialidade">
+        <div class="icone-especialidade">GI</div>
+        <h2>Ginecologia</h2>
+        <p>Acompanhamento e cuidados importantes para a saúde da mulher.</p>
+    </article>
+</section>
+
+<section class="chamada-medicos">
+    <div>
+        <span>Encontre o atendimento ideal</span>
+        <h2>Conheça os médicos da nossa clínica</h2>
+        <p>Acesse a lista completa de profissionais cadastrados no sistema.</p>
+    </div>
+    <a class="botao-clinica botao-clinica-principal"
+       asp-controller="Medico" asp-action="Index">
+        Ver médicos cadastrados
+    </a>
+</section>

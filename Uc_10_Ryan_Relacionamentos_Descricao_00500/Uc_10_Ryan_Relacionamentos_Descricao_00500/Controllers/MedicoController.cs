@@ -25,6 +25,18 @@ namespace Uc_10_Ryan_Relacionamentos_Descricao_00500.Controllers
             return View(await _context.Medico.ToListAsync());
         }
 
+        // GET: Medico/NossaEquipe
+        public IActionResult NossaEquipe()
+        {
+            return View();
+        }
+
+        // GET: Medico/Especialidades
+        public IActionResult Especialidades()
+        {
+            return View();
+        }
+
         // GET: Medico/Details/5
         public async Task<IActionResult> Details(int? id)
         {

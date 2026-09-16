@@ -1,0 +1,66 @@
+@{
+    ViewData["Title"] = "Cursos";
+}
+
+@section Styles {
+    <link rel="stylesheet"
+          href="~/css/curso.css"
+          asp-append-version="true" />
+}
+
+<section class="pagina-hero">
+    <div class="hero-conteudo">
+        <span class="etiqueta">Conhecimento para avançar</span>
+
+        <h1>Cursos para diferentes objetivos profissionais</h1>
+
+        <p>Encontre uma formação compatível com seus interesses e planos.</p>
+
+        <div class="acoes">
+            <a class="botao principal"
+               asp-controller="Curso"
+               asp-action="Index">
+                Ver cursos cadastrados
+            </a>
+
+            <a class="botao secundario"
+               asp-controller="Curso"
+               asp-action="ComoEscolher">
+                Como escolher
+            </a>
+        </div>
+    </div>
+
+    <div class="destaque">
+        <span class="simbolo">C</span>
+        <strong>Educação que transforma</strong>
+        <p>Conhecimento, orientação e novas possibilidades.</p>
+    </div>
+</section>
+
+<section class="secao">
+    <header class="titulo">
+        <span>Nossos diferenciais</span>
+        <h2>Uma jornada construída com você</h2>
+    </header>
+
+    <div class="grade">
+        <article>
+            <b>01</b>
+            <h3>Formação completa</h3>
+            <p>Informação e apoio para uma experiência de aprendizado melhor.</p>
+        </article>
+
+        <article>
+            <b>02</b>
+            <h3>Conteúdo atualizado</h3>
+            <p>Informação e apoio para uma experiência de aprendizado melhor.</p>
+        </article>
+
+        <article>
+            <b>03</b>
+            <h3>Professores preparados</h3>
+            <p>Informação e apoio para uma experiência de aprendizado melhor.</p>
+        </article>
+    </div>
+</section>

@@ -24,6 +24,15 @@ namespace Uc_10_Ryan_Relacionamentos_Descricao_00502.Controllers
         {
             return View(await _context.Professor.ToListAsync());
         }
+        public IActionResult Metodologia()
+        {
+            return View();
+        }
+
+        public IActionResult NossaEquipe()
+        {
+            return View();
+        }
 
         // GET: Professor/Details/5
         public async Task<IActionResult> Details(int? id)

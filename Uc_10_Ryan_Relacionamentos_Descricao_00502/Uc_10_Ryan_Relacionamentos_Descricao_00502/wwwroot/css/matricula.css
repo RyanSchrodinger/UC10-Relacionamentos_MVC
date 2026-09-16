@@ -1,0 +1,10 @@
+@import url("paginas-escola.css");
+:root {
+  --cor: #b07a20;
+  --escuro: #684d20;
+  --texto: #7d715c;
+  --fundo1: #fff8e9;
+  --fundo2: #f4e7c8;
+  --borda: #eee3ca;
+  --suave: #c6a36a;
+}

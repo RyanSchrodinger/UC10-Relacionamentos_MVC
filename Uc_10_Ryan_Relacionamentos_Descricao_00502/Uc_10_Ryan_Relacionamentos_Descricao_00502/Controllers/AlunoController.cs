@@ -25,6 +25,16 @@ namespace Uc_10_Ryan_Relacionamentos_Descricao_00502.Controllers
             return View(await _context.Aluno.ToListAsync());
         }
 
+        public IActionResult AreaDoAluno()
+        {
+            return View();
+        }
+
+        public IActionResult DicasDeEstudo()
+        {
+            return View();
+        }
+
         // GET: Aluno/Details/5
         public async Task<IActionResult> Details(int? id)
         {

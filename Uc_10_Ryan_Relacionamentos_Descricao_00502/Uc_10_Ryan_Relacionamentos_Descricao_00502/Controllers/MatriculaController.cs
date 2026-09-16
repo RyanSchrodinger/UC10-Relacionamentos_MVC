@@ -26,6 +26,16 @@ namespace Uc_10_Ryan_Relacionamentos_Descricao_00502.Controllers
             return View(await uc_10_Ryan_Relacionamentos_Descricao_00502Context.ToListAsync());
         }
 
+        public IActionResult ComoSeMatricular()
+        {
+            return View();
+        }
+
+        public IActionResult Etapas()
+        {
+            return View();
+        }
+
         // GET: Matricula/Details/5
         public async Task<IActionResult> Details(int? id)
         {

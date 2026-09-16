@@ -1,0 +1,66 @@
+@{
+    ViewData["Title"] = "Matrículas";
+}
+
+@section Styles {
+    <link rel="stylesheet"
+          href="~/css/matricula.css"
+          asp-append-version="true" />
+}
+
+<section class="pagina-hero">
+    <div class="hero-conteudo">
+        <span class="etiqueta">Comece sua jornada</span>
+
+        <h1>Faça parte da nossa comunidade de aprendizado</h1>
+
+        <p>Entenda como aluno e curso se relacionam por meio da matrícula.</p>
+
+        <div class="acoes">
+            <a class="botao principal"
+               asp-controller="Matricula"
+               asp-action="Index">
+                Ver matrículas cadastradas
+            </a>
+
+            <a class="botao secundario"
+               asp-controller="Matricula"
+               asp-action="Etapas">
+                Ver etapas
+            </a>
+        </div>
+    </div>
+
+    <div class="destaque">
+        <span class="simbolo">M</span>
+        <strong>Educação que transforma</strong>
+        <p>Conhecimento, orientação e novas possibilidades.</p>
+    </div>
+</section>
+
+<section class="secao">
+    <header class="titulo">
+        <span>Nossos diferenciais</span>
+        <h2>Uma jornada construída com você</h2>
+    </header>
+
+    <div class="grade">
+        <article>
+            <b>01</b>
+            <h3>Escolha o aluno</h3>
+            <p>Informação e apoio para uma experiência de aprendizado melhor.</p>
+        </article>
+
+        <article>
+            <b>02</b>
+            <h3>Selecione o curso</h3>
+            <p>Informação e apoio para uma experiência de aprendizado melhor.</p>
+        </article>
+
+        <article>
+            <b>03</b>
+            <h3>Confirme a matrícula</h3>
+            <p>Informação e apoio para uma experiência de aprendizado melhor.</p>
+        </article>
+    </div>
+</section>

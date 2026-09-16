@@ -1,0 +1,66 @@
+@{
+    ViewData["Title"] = "Metodologia";
+}
+
+@section Styles {
+    <link rel="stylesheet"
+          href="~/css/professor.css"
+          asp-append-version="true" />
+}
+
+<section class="pagina-hero">
+    <div class="hero-conteudo">
+        <span class="etiqueta">Ensino que aproxima</span>
+
+        <h1>Uma metodologia clara e acolhedora</h1>
+
+        <p>Aulas planejadas para unir conhecimento, prática e participação.</p>
+
+        <div class="acoes">
+            <a class="botao principal"
+               asp-controller="Professor"
+               asp-action="Index">
+                Acessar professores
+            </a>
+
+            <a class="botao secundario"
+               asp-controller="Professor"
+               asp-action="Index">
+                Voltar aos cadastros
+            </a>
+        </div>
+    </div>
+
+    <div class="destaque">
+        <span class="simbolo">P</span>
+        <strong>Educação que transforma</strong>
+        <p>Conhecimento, orientação e novas possibilidades.</p>
+    </div>
+</section>
+
+<section class="secao">
+    <header class="titulo">
+        <span>Nossos diferenciais</span>
+        <h2>Uma jornada construída com você</h2>
+    </header>
+
+    <div class="grade">
+        <article>
+            <b>01</b>
+            <h3>Conteúdo objetivo</h3>
+            <p>Informação e apoio para uma experiência de aprendizado melhor.</p>
+        </article>
+
+        <article>
+            <b>02</b>
+            <h3>Atividades práticas</h3>
+            <p>Informação e apoio para uma experiência de aprendizado melhor.</p>
+        </article>
+
+        <article>
+            <b>03</b>
+            <h3>Avaliação contínua</h3>
+            <p>Informação e apoio para uma experiência de aprendizado melhor.</p>
+        </article>
+    </div>
+</section>

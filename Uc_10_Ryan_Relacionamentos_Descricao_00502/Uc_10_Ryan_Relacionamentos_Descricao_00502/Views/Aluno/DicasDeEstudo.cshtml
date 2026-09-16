@@ -1,0 +1,66 @@
+@{
+    ViewData["Title"] = "Dicas de estudo";
+}
+
+@section Styles {
+    <link rel="stylesheet"
+          href="~/css/aluno.css"
+          asp-append-version="true" />
+}
+
+<section class="pagina-hero">
+    <div class="hero-conteudo">
+        <span class="etiqueta">Aprenda com mais confiança</span>
+
+        <h1>Dicas para melhorar seus estudos</h1>
+
+        <p>Organização e constância ajudam você a alcançar resultados melhores.</p>
+
+        <div class="acoes">
+            <a class="botao principal"
+               asp-controller="Aluno"
+               asp-action="Index">
+                Acessar alunos
+            </a>
+
+            <a class="botao secundario"
+               asp-controller="Aluno"
+               asp-action="Index">
+                Voltar aos cadastros
+            </a>
+        </div>
+    </div>
+
+    <div class="destaque">
+        <span class="simbolo">A</span>
+        <strong>Educação que transforma</strong>
+        <p>Conhecimento, orientação e novas possibilidades.</p>
+    </div>
+</section>
+
+<section class="secao">
+    <header class="titulo">
+        <span>Nossos diferenciais</span>
+        <h2>Uma jornada construída com você</h2>
+    </header>
+
+    <div class="grade">
+        <article>
+            <b>01</b>
+            <h3>Crie uma rotina</h3>
+            <p>Informação e apoio para uma experiência de aprendizado melhor.</p>
+        </article>
+
+        <article>
+            <b>02</b>
+            <h3>Faça anotações</h3>
+            <p>Informação e apoio para uma experiência de aprendizado melhor.</p>
+        </article>
+
+        <article>
+            <b>03</b>
+            <h3>Revise o conteúdo</h3>
+            <p>Informação e apoio para uma experiência de aprendizado melhor.</p>
+        </article>
+    </div>
+</section>

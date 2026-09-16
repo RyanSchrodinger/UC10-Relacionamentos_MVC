@@ -26,6 +26,16 @@ namespace Uc_10_Ryan_Relacionamentos_Descricao_00502.Controllers
             return View(await uc_10_Ryan_Relacionamentos_Descricao_00502Context.ToListAsync());
         }
 
+        public IActionResult ComoEscolher()
+        {
+            return View();
+        }
+
+        public IActionResult NossosCursos()
+        {
+            return View();
+        }
+
         // GET: Curso/Details/5
         public async Task<IActionResult> Details(int? id)
         {

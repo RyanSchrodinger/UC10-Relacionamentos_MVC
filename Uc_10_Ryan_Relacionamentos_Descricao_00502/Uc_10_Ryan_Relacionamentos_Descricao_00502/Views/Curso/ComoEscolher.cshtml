@@ -1,0 +1,66 @@
+@{
+    ViewData["Title"] = "Como escolher";
+}
+
+@section Styles {
+    <link rel="stylesheet"
+          href="~/css/curso.css"
+          asp-append-version="true" />
+}
+
+<section class="pagina-hero">
+    <div class="hero-conteudo">
+        <span class="etiqueta">Escolha com tranquilidade</span>
+
+        <h1>Como escolher o curso ideal?</h1>
+
+        <p>Considere seus interesses, objetivos e disponibilidade antes de decidir.</p>
+
+        <div class="acoes">
+            <a class="botao principal"
+               asp-controller="Curso"
+               asp-action="Index">
+                Acessar cursos
+            </a>
+
+            <a class="botao secundario"
+               asp-controller="Curso"
+               asp-action="Index">
+                Voltar aos cadastros
+            </a>
+        </div>
+    </div>
+
+    <div class="destaque">
+        <span class="simbolo">C</span>
+        <strong>Educação que transforma</strong>
+        <p>Conhecimento, orientação e novas possibilidades.</p>
+    </div>
+</section>
+
+<section class="secao">
+    <header class="titulo">
+        <span>Nossos diferenciais</span>
+        <h2>Uma jornada construída com você</h2>
+    </header>
+
+    <div class="grade">
+        <article>
+            <b>01</b>
+            <h3>Conheça seus interesses</h3>
+            <p>Informação e apoio para uma experiência de aprendizado melhor.</p>
+        </article>
+
+        <article>
+            <b>02</b>
+            <h3>Confira a carga horária</h3>
+            <p>Informação e apoio para uma experiência de aprendizado melhor.</p>
+        </article>
+
+        <article>
+            <b>03</b>
+            <h3>Pesquise a área</h3>
+            <p>Informação e apoio para uma experiência de aprendizado melhor.</p>
+        </article>
+    </div>
+</section>

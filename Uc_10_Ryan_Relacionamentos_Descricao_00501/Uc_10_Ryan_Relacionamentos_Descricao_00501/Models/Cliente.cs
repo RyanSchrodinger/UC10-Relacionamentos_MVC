@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
 namespace Uc_10_Ryan_Relacionamentos_Descricao_00501.Models
 {
@@ -7,12 +7,15 @@ namespace Uc_10_Ryan_Relacionamentos_Descricao_00501.Models
         public int ClienteId { get; set; }
 
         [Required(ErrorMessage = "O Nome é obrigatório.")]
-        public string Nome { get; set; }
-        [Required(ErrorMessage = "O Email é obrigatório.")]
-        public string Email { get;set; }
-        [Required(ErrorMessage = "O Cpf é obrigatório.")]
-        public string Cpf { get; set; }
+        public string Nome { get; set; } = string.Empty;
 
-        public virtual ICollection<Venda> Vendas { get; set; } = new List<Venda>();
+        [Required(ErrorMessage = "O Email é obrigatório.")]
+        public string Email { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "O CPF é obrigatório.")]
+        public string Cpf { get; set; } = string.Empty;
+
+        public ICollection<Venda> Vendas { get; set; }
+            = new List<Venda>();
     }
 }

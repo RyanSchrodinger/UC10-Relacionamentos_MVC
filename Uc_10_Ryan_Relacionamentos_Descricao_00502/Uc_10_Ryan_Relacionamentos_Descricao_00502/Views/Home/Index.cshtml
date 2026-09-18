@@ -1,62 +1,8 @@
 ﻿@{
-    ViewData["Title"] = "Início";
+    ViewData["Title"] = "Home Page";
 }
 
-@section Styles {
-    <link rel="stylesheet"
-          href="~/css/home.css"
-          asp-append-version="true" />
-}
-
-<section class="home-hero">
-    <div class="home-hero-conteudo">
-        <span>Instituto Saber</span>
-        <h1>Conhecimento para transformar o futuro</h1>
-        <p>
-            Alunos, professores, cursos e matrículas reunidos
-            em uma experiência organizada.
-        </p>
-
-        <div class="home-acoes">
-            <a asp-controller="Curso" asp-action="NossosCursos">
-                Conhecer cursos
-            </a>
-            <a class="outline"
-               asp-controller="Matricula"
-               asp-action="ComoSeMatricular">
-                Como se matricular
-            </a>
-        </div>
-    </div>
-
-    <aside>
-        <b>IS</b>
-        <strong>Aprender abre caminhos</strong>
-    </aside>
-</section>
-
-<section class="home-grade">
-    <article>
-        <h2>Alunos</h2>
-        <p>Informação e apoio para a jornada de estudos.</p>
-        <a asp-controller="Aluno" asp-action="AreaDoAluno">Área do aluno →</a>
-    </article>
-
-    <article>
-        <h2>Professores</h2>
-        <p>Conheça quem orienta e compartilha conhecimento.</p>
-        <a asp-controller="Professor" asp-action="NossaEquipe">Nossa equipe →</a>
-    </article>
-
-    <article>
-        <h2>Cursos</h2>
-        <p>Formações para diferentes objetivos.</p>
-        <a asp-controller="Curso" asp-action="NossosCursos">Ver cursos →</a>
-    </article>
-
-    <article>
-        <h2>Matrículas</h2>
-        <p>Entenda como iniciar sua formação.</p>
-        <a asp-controller="Matricula" asp-action="ComoSeMatricular">Ver matrículas →</a>
-    </article>
-</section>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>

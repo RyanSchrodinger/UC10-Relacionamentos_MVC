@@ -1,10 +1,10 @@
-@model Uc_10_Ryan_Relacionamentos_Descricao_00501.Models.Automovel
+﻿@model Uc_10_Ryan_Relacionamentos_Descricao_00501.Models.Automovel
 
 @{
-    ViewData["Title"] = "Cadastrar ";
+    ViewData["Title"] = "Cadastrar";
 }
 
-<h1>Cadastrar </h1>
+<h1>Cadastrar</h1>
 
 <h4>Automovel</h4>
 <hr />
@@ -12,55 +12,41 @@
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-
             <div class="form-group">
                 <label asp-for="Modelo" class="control-label"></label>
                 <input asp-for="Modelo" class="form-control" />
                 <span asp-validation-for="Modelo" class="text-danger"></span>
             </div>
-
             <div class="form-group">
                 <label asp-for="Cor" class="control-label"></label>
                 <input asp-for="Cor" class="form-control" />
                 <span asp-validation-for="Cor" class="text-danger"></span>
             </div>
-
             <div class="form-group">
                 <label asp-for="Ano" class="control-label"></label>
                 <input asp-for="Ano" class="form-control" />
                 <span asp-validation-for="Ano" class="text-danger"></span>
             </div>
-
             <div class="form-group">
                 <label asp-for="Placa" class="control-label"></label>
                 <input asp-for="Placa" class="form-control" />
                 <span asp-validation-for="Placa" class="text-danger"></span>
             </div>
-
             <div class="form-group">
                 <label asp-for="MarcaId" class="control-label"></label>
-                <input asp-for="MarcaId" class="form-control" />
-                <span asp-validation-for="MarcaId" class="text-danger"></span>
-            </div>
-
-            <div class="form-group">
-                <label asp-for="Marca" class="control-label"></label>
-                <input asp-for="Marca" class="form-control" />
-                <span asp-validation-for="Marca" class="text-danger"></span>
-            </div>
-
-            <div class="form-group">
-                <label asp-for="Vendas" class="control-label"></label>
-                <input asp-for="Vendas" class="form-control" />
-                <span asp-validation-for="Vendas" class="text-danger"></span>
+                <select asp-for="MarcaId" class ="form-control" asp-items="ViewBag.MarcaId"></select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Cadastrar " class="btn btn-primary" />
+                <input type="submit" value="Cadastrar" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Voltar para listagem</a>
+    <a asp-action="Index">Voltar para a listagem</a>
 </div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

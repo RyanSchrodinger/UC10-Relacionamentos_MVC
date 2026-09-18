@@ -1,0 +1,66 @@
+@{
+    ViewData["Title"] = "Área do cliente";
+}
+
+@section Styles {
+    <link rel="stylesheet"
+          href="~/css/cliente.css"
+          asp-append-version="true" />
+}
+
+<section class="pagina-hero">
+    <div class="hero-conteudo">
+        <span class="etiqueta">Você em primeiro lugar</span>
+
+        <h1>Uma experiência simples para nossos clientes</h1>
+
+        <p>Acesse informações e acompanhe seu relacionamento com a concessionária.</p>
+
+        <div class="acoes">
+            <a class="botao principal"
+               asp-controller="Cliente"
+               asp-action="Index">
+                Ver clientes cadastrados
+            </a>
+
+            <a class="botao secundario"
+               asp-controller="Cliente"
+               asp-action="Vantagens">
+                Conhecer vantagens
+            </a>
+        </div>
+    </div>
+
+    <div class="destaque">
+        <span class="simbolo">C</span>
+        <strong>Escolha com confiança</strong>
+        <p>Atendimento, informação e transparência em cada etapa.</p>
+    </div>
+</section>
+
+<section class="secao">
+    <header class="titulo">
+        <span>Nossos diferenciais</span>
+        <h2>Uma experiência pensada para você</h2>
+    </header>
+
+    <div class="grade">
+        <article>
+            <b>01</b>
+            <h3>Cadastro simples</h3>
+            <p>Informações claras para tornar sua experiência mais simples e segura.</p>
+        </article>
+
+        <article>
+            <b>02</b>
+            <h3>Atendimento pessoal</h3>
+            <p>Informações claras para tornar sua experiência mais simples e segura.</p>
+        </article>
+
+        <article>
+            <b>03</b>
+            <h3>Mais transparência</h3>
+            <p>Informações claras para tornar sua experiência mais simples e segura.</p>
+        </article>
+    </div>
+</section>

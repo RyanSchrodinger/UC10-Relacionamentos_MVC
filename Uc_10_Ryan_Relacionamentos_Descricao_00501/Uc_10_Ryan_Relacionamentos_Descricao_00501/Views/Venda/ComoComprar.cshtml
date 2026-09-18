@@ -1,0 +1,66 @@
+@{
+    ViewData["Title"] = "Como comprar";
+}
+
+@section Styles {
+    <link rel="stylesheet"
+          href="~/css/venda.css"
+          asp-append-version="true" />
+}
+
+<section class="pagina-hero">
+    <div class="hero-conteudo">
+        <span class="etiqueta">Seu próximo carro começa aqui</span>
+
+        <h1>Uma compra simples, segura e transparente</h1>
+
+        <p>Entenda a negociação e acompanhe cada etapa até a conclusão da venda.</p>
+
+        <div class="acoes">
+            <a class="botao principal"
+               asp-controller="Venda"
+               asp-action="Index">
+                Ver vendas cadastradas
+            </a>
+
+            <a class="botao secundario"
+               asp-controller="Venda"
+               asp-action="EtapasDaVenda">
+                Ver etapas da venda
+            </a>
+        </div>
+    </div>
+
+    <div class="destaque">
+        <span class="simbolo">V</span>
+        <strong>Escolha com confiança</strong>
+        <p>Atendimento, informação e transparência em cada etapa.</p>
+    </div>
+</section>
+
+<section class="secao">
+    <header class="titulo">
+        <span>Nossos diferenciais</span>
+        <h2>Uma experiência pensada para você</h2>
+    </header>
+
+    <div class="grade">
+        <article>
+            <b>01</b>
+            <h3>Cliente</h3>
+            <p>Informações claras para tornar sua experiência mais simples e segura.</p>
+        </article>
+
+        <article>
+            <b>02</b>
+            <h3>Vendedor</h3>
+            <p>Informações claras para tornar sua experiência mais simples e segura.</p>
+        </article>
+
+        <article>
+            <b>03</b>
+            <h3>Automóvel</h3>
+            <p>Informações claras para tornar sua experiência mais simples e segura.</p>
+        </article>
+    </div>
+</section>

@@ -1,4 +1,4 @@
-@model Uc_10_Ryan_Relacionamentos_Descricao_00501.Models.Automovel
+﻿@model Uc_10_Ryan_Relacionamentos_Descricao_00501.Models.Automovel
 
 @{
     ViewData["Title"] = "Editar";
@@ -35,18 +35,8 @@
             </div>
             <div class="form-group">
                 <label asp-for="MarcaId" class="control-label"></label>
-                <input asp-for="MarcaId" class="form-control" />
+                <select asp-for="MarcaId" class="form-control" asp-items="ViewBag.MarcaId"></select>
                 <span asp-validation-for="MarcaId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Marca" class="control-label"></label>
-                <input asp-for="Marca" class="form-control" />
-                <span asp-validation-for="Marca" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Vendas" class="control-label"></label>
-                <input asp-for="Vendas" class="form-control" />
-                <span asp-validation-for="Vendas" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
@@ -56,7 +46,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Voltar para listagem</a>
+    <a asp-action="Index">Voltar para a listagem</a>
 </div>
 
 @section Scripts {
